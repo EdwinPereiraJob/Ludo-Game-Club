@@ -115,6 +115,8 @@ main {
    width: 560px;
    height: 315px;
    margin: auto;
+   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.261);
+   border-radius: 20px;
 }
 .icon {
     display: flex;
@@ -162,4 +164,25 @@ main h2 {
         width: 100%;
         background-color: white;
     }
+}
+.exp {
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #202660;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fot-logo {
+    height: 5%;
+    margin-bottom: 1rem;
+    width: 30%;
 }
