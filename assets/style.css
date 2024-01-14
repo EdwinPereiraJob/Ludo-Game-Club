@@ -235,7 +235,7 @@ main h2 {
         border-bottom: 1px solid black;
      }
      .contact img {
-         width: 28%;
+         width: 100%;
          margin: auto;
          height: 120px;
      }
