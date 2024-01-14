@@ -227,8 +227,8 @@ main h2 {
         background-color: white;
     }
     .fot-logo {
-        height: 5%;
-        width: 30%;
+        height: 50%;
+        width: 50%;
     }
     .contact {
         background-color: var(--header-color);
