@@ -177,10 +177,6 @@ header {
 
 
 
-
-
-
-
 main {
     padding-top: 130px;
     text-align: center;
@@ -335,10 +331,6 @@ main h2 {
         width: 100%;
         background-color: white;
     }
-    .fot-logo {
-        height: 50%;
-        width: 50%;
-    }
     .group {
         background-color: var(--header-color);
         border-bottom: 1px solid black;
@@ -366,7 +358,7 @@ footer {
     flex-direction: column;
 }
 .fot-logo {
-    height: 5%;
+    height: auto;
     margin-bottom: 1rem;
     width: 15%;
 }
