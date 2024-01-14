@@ -154,4 +154,7 @@ main h2 {
     .video {
         width: 100%;
     }
+    .contact img {
+        width: 100%;
+    }
 }
