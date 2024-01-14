@@ -108,58 +108,74 @@ header {
 
 
 
-/* .window-background {
+
+
+
+/* ... Tu código existente ... */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(4px);
-    background-color: rgba(0, 0, 0, 0.261);
-    z-index: 5;
-    display: none; 
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
 }
-.window-container {
-    position: relative;
-    background-color: var(--header-color);
-    width: 550px;
-    height: auto;
-    padding: 1.5rem;
-    border-radius: 8px;
-    animation-name: modal;
-    animation-duration: .5s;
-    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .4);
-    z-index: 8;
+
+.modal-contenido {
+    background-color: var(--header-color); /* Usa el mismo color que el encabezado */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-@keyframes modal {
-    from {
-        transform: translateY(50vh);
-    }
-    to {
-        transform: translateY(0);
-    }
+
+.modal-contenido h2 {
+    color: var(--main-color); /* Utiliza el color principal de tu página para los títulos */
+    font-size: 24px;
+    margin-bottom: 20px;
 }
-.close {
-    transition: transform 1s cubic-bezier(0, -0.42, 1, -0.41);
-    transform: translateY(60vh);
+
+.cerrar {
+    color: var(--text-color); /* Utiliza el color de texto principal para el botón de cerrar */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
-.close-button {
-    position: absolute;
-    border-radius: 50%;
-    top: -15px;
-    right: -15px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.cerrar:hover,
+.cerrar:focus {
+    color: var(--main-color);
+    text-decoration: none;
     cursor: pointer;
 }
-.icon-close
- */
+
+.container-m {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container-m div {
+    flex: 1;
+    text-align: center;
+}
+
+.img-contact {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* ... Otros estilos existentes ... */
+
+
+
 
 
 
@@ -195,7 +211,43 @@ main h2 {
     padding-top: 10px;
     font-weight: bold;
 }
-.sec1 {
+
+
+
+
+
+.sec1,
+.sec2 {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.sec1 h1,
+.sec2 h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sec1 p,
+.sec2 p,
+.sec2 li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.sec1 ul,
+.sec2 ul {
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* ... Otros estilos existentes ... */
+
+
+
+
+/* .sec1 {
     width: 50%;
     margin: auto;
     padding-bottom: 50px;
@@ -204,16 +256,73 @@ main h2 {
     padding: 15px 0;
 
 }
-.contact {
+
+
+
+/* ... Otros estilos existentes ... */
+
+.sec2 {
+    padding: 15px 0;
+    width: 50%;
+    margin: auto;
+}
+
+.sec2 h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--text-body);
+}
+
+.sec2 ul {
+    text-align: left;
+    margin-left: 20px; /* Añade un margen izquierdo para las listas */
+}
+
+.sec2 li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* ... Otros estilos existentes ... */
+ */
+
+
+
+
+
+
+
+
+
+
+.group {
     border-top: 1px solid black;
    border-bottom: 1px solid black;
    background-color: white;
 }
-.contact img {
+.group img {
     width: 28%;
     margin: auto;
     height: 120px;
 }
+
+
+
+
+.group img {
+    width: 28%;
+    height: auto;
+    border-radius: 10px; /* Agrega bordes redondeados para una apariencia más suave */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave para destacar la imagen */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave al hacer hover */
+}
+
+.group img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al hacer hover */
+}
+
+
+
 @media (max-width:768px) {
     .video {
         width: 100%;
@@ -230,11 +339,11 @@ main h2 {
         height: 50%;
         width: 50%;
     }
-    .contact {
+    .group {
         background-color: var(--header-color);
         border-bottom: 1px solid black;
      }
-     .contact img {
+     .group img {
          width: 100%;
          margin: auto;
          height: 120px;

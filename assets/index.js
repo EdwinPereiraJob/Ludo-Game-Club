@@ -11,18 +11,23 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-const windowBackground = document.getElementById("window-background"),
-      windowContainer = document.getElementById("window-container"),
-      openButton = document.getElementById("open-button"),
-      closeButton = document.getElementById("close-button")
 
-openButton.addEventListener("click", ()=>windowBackground.style.display="flex")
+document.addEventListener('DOMContentLoaded', function() {
+    // Asegúrate de que el DOM esté completamente cargado antes de adjuntar los eventos.
 
-const  closeWindow =  () => {
-    windowContainer.classList.add("close")
-    setTimeout(()=> {
-        windowContainer.classList.remove("clase")
-        windowBackground.style.display="none"
-    }, 1000);
-}
-closeButton.addEventListener("click", ()=>closeWindow())
+    document.getElementById('open-button').addEventListener('click', function(event) {
+        event.preventDefault(); // Evita que el enlace cause una recarga de la página.
+        document.getElementById('modal').style.display = 'block';
+    });
+
+    document.getElementById('cerrarModal').addEventListener('click', function() {
+        document.getElementById('modal').style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == document.getElementById('modal')) {
+            document.getElementById('modal').style.display = 'none';
+        }
+    });
+});
+
