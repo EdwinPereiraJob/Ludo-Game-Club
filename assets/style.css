@@ -105,6 +105,66 @@ header {
 .navbar.menu-open {
     right: 2%;
 }
+
+
+
+/* .window-background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.261);
+    z-index: 5;
+    display: none; 
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.window-container {
+    position: relative;
+    background-color: var(--header-color);
+    width: 550px;
+    height: auto;
+    padding: 1.5rem;
+    border-radius: 8px;
+    animation-name: modal;
+    animation-duration: .5s;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .4);
+    z-index: 8;
+}
+@keyframes modal {
+    from {
+        transform: translateY(50vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.close {
+    transition: transform 1s cubic-bezier(0, -0.42, 1, -0.41);
+    transform: translateY(60vh);
+}
+.close-button {
+    position: absolute;
+    border-radius: 50%;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.icon-close
+ */
+
+
+
+
+
 main {
     padding-top: 130px;
     text-align: center;
@@ -145,8 +205,9 @@ main h2 {
 
 }
 .contact {
-   background-color: var(--header-color);
+    border-top: 1px solid black;
    border-bottom: 1px solid black;
+   background-color: white;
 }
 .contact img {
     width: 28%;
@@ -165,6 +226,19 @@ main h2 {
         width: 100%;
         background-color: white;
     }
+    .fot-logo {
+        height: 5%;
+        width: 30%;
+    }
+    .contact {
+        background-color: var(--header-color);
+        border-bottom: 1px solid black;
+     }
+     .contact img {
+         width: 28%;
+         margin: auto;
+         height: 120px;
+     }
 }
 .exp {
     font-weight: bolder;
@@ -185,5 +259,5 @@ footer {
 .fot-logo {
     height: 5%;
     margin-bottom: 1rem;
-    width: 30%;
+    width: 15%;
 }
