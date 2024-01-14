@@ -117,7 +117,6 @@ main {
    margin: auto;
    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.261);
    border-radius: 20px;
-   padding: 0 3px;
 }
 .icon {
     display: flex;
@@ -157,6 +156,7 @@ main h2 {
 @media (max-width:768px) {
     .video {
         width: 100%;
+        padding: 0 3px;
     }
     .se1 {
         width: 100%;
