@@ -114,6 +114,7 @@ main {
 .video {
    width: 560px;
    height: 315px;
+   margin: auto;
 }
 .icon {
     display: flex;
@@ -154,7 +155,11 @@ main h2 {
     .video {
         width: 100%;
     }
+    .se1 {
+        width: 100%;
+    }
     .contact img {
         width: 100%;
+        background-color: white;
     }
 }
